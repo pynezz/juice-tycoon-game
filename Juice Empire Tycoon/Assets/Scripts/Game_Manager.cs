@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game_Manager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private Inventory inventory;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] private UI_Inventory uiInventory;
+
+
+
+    private void Awake()
     {
-        
+        inventory = new Inventory();
+        uiInventory.SetInventory(inventory);
     }
 }
