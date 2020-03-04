@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8c5b075f9bb7fd345a4977c708b5c618
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Liquid
+  fontNames:
+  - Liquid
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 7a44401403752c548b1ee28a7215cf99, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
