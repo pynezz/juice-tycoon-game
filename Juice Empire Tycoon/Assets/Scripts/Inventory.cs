@@ -10,9 +10,9 @@ public class Inventory
     {
         itemList = new List<Items>();
 
-        AddItem(new Items { itemType = Items.ItemType.CloverJuice, amount = 2 });
-        AddItem(new Items { itemType = Items.ItemType.LightningJuice, amount = 2 });
-        AddItem(new Items { itemType = Items.ItemType.EmptyBottle, amount = 2 });
+        AddItem(new Items { itemType = Items.ItemType.CloverJuice, amount = 1 });
+        AddItem(new Items { itemType = Items.ItemType.LightningJuice, amount = 1 });
+        AddItem(new Items { itemType = Items.ItemType.EmptyBottle, amount = 1 });
         Debug.Log(itemList.Count);
     }
 

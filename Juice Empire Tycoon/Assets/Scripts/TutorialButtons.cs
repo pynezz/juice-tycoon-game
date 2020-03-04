@@ -9,7 +9,7 @@ public class TutorialButtons : MonoBehaviour
 
     public void Start()
     {
-        //welcomeScreen.SetActive(true);
+        welcomeScreen.SetActive(true);
     }
 
     public void ExitButton()
@@ -20,5 +20,13 @@ public class TutorialButtons : MonoBehaviour
     public void StartPlaying()
     {
         welcomeScreen.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            welcomeScreen.SetActive(false);
+        }
     }
 }
