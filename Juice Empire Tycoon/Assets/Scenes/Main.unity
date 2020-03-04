@@ -1448,7 +1448,7 @@ GameObject:
   - component: {fileID: 855273403}
   - component: {fileID: 855273402}
   m_Layer: 5
-  m_Name: inventoryText
+  m_Name: AvailableJuiceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1504,7 +1504,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Inventory
+  m_Text: Available items
 --- !u!222 &855273403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1678,7 +1678,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 2
 --- !u!222 &1008242681
 CanvasRenderer:
   m_ObjectHideFlags: 0
