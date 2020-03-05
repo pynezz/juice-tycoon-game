@@ -5,7 +5,7 @@ using UnityEngine;
 public class Buttons : MonoBehaviour
 {
     public GameObject exitInventoryBtn;
-    public GameObject totalInventoryUI;
+    public GameObject marketPlaceBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -21,19 +21,19 @@ public class Buttons : MonoBehaviour
 
     public void CloseInventoryWindow()
     {
-        totalInventoryUI.SetActive(false);
+        marketPlaceBtn.SetActive(false);
     }
 
     public void OpenInventoryButtonPress()
     {
-        totalInventoryUI.SetActive(!totalInventoryUI.activeSelf);
+        marketPlaceBtn.SetActive(!marketPlaceBtn.activeSelf);
     }
 
     public void InventoryKeyCode()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.M))
         {
-            totalInventoryUI.SetActive(!totalInventoryUI.activeSelf);
+            marketPlaceBtn.SetActive(!marketPlaceBtn.activeSelf);
         }
        
     }
