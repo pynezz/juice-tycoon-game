@@ -2922,6 +2922,7 @@ MonoBehaviour:
   premiumKingJuiceSprite: {fileID: 21300000, guid: 64561602bb30c194ba15f136cb27d7ea,
     type: 3}
   emptyBottleSprite: {fileID: 21300000, guid: 602a5ef54e55e8544864595918a9334d, type: 3}
+  nicotine100mgSprite: {fileID: 0}
 --- !u!4 &576757710
 Transform:
   m_ObjectHideFlags: 0
