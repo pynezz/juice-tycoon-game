@@ -1,12 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI; 
 
 public class Buttons : MonoBehaviour
 {
     public GameObject exitInventoryBtn;
     public GameObject marketPlaceBtn;
-    public GameObject buyEmptyBottleBtn, buyIceJuiceBtn, buyThunderJuiceBtn, buyCloverJuiceBtn, buyRadiateJuiceBtn, buyKingJuiceBtn, buyNicotineBtn, buyVGJuiceBtn, buyPGJuiceBtn; 
+    public GameObject buyEmptyBottleBtn, buyIceJuiceBtn, buyThunderJuiceBtn, buyCloverJuiceBtn, buyRadiateJuiceBtn, buyKingJuiceBtn, buyNicotineBtn, buyVGJuiceBtn, buyPGJuiceBtn;
+
+
+
+
+    public bool boolMouseOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +25,23 @@ public class Buttons : MonoBehaviour
     {
         InventoryKeyCode();
     }
+
+    private void OnMouseOver()
+    {
+        boolMouseOver = true;
+    }
+
+    private void OnMouseExit()
+    {
+        boolMouseOver = false;
+    }
+
+    private void OnGUI()
+    {
+        GUI.depth = -10;
+        GUI.Button(new Rect(10, 10, 100, 20), new GUIContent("Click me!", "Mouse Over Button"));
+
+    } 
 
     public void CloseInventoryWindow()
     {
@@ -40,7 +63,7 @@ public class Buttons : MonoBehaviour
     }
     public void BuyEmptyBottle()
     {
-
+        
     }
     public void BuyIceJuice()
     {

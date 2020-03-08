@@ -13,7 +13,6 @@ public class Inventory
         AddItem(new Items { itemType = Items.ItemType.CloverJuice, amount = 1 });
         AddItem(new Items { itemType = Items.ItemType.LightningJuice, amount = 1 });
         AddItem(new Items { itemType = Items.ItemType.EmptyBottle, amount = 1 });
-        Debug.Log(itemList.Count);
     }
 
     public void AddItem(Items item)

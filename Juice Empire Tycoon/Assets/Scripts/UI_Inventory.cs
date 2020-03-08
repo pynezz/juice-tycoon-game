@@ -46,4 +46,9 @@ public class UI_Inventory : MonoBehaviour
             }
         }
     }
+
+    public void PickFromInventory()
+    {
+        
+    }
 }
