@@ -286,8 +286,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -794.65, y: 428}
-  m_SizeDelta: {x: 264.7, y: 94.3}
+  m_AnchoredPosition: {x: -794.65, y: 449.3}
+  m_SizeDelta: {x: 264.7, y: 176.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &47201860
 MonoBehaviour:
@@ -1280,8 +1280,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -475.8, y: 428}
-  m_SizeDelta: {x: 373, y: 94.3}
+  m_AnchoredPosition: {x: -475.8, y: 449.3}
+  m_SizeDelta: {x: 373, y: 176.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246521971
 MonoBehaviour:
@@ -2428,7 +2428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &433148440
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2682,7 +2682,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.41960788, g: 0.41960788, b: 0.41960788, a: 1}
+  m_BackGroundColor: {r: 0.10588236, g: 0.20392159, b: 0.2901961, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2757,8 +2757,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433148440}
-  - {fileID: 1132694610}
-  - {fileID: 1077971743}
   m_Father: {fileID: 716567911}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3661,7 +3659,7 @@ GameObject:
   - component: {fileID: 716567911}
   - component: {fileID: 716567912}
   m_Layer: 5
-  m_Name: UI_Inventory
+  m_Name: UI_AvailaBleJuices
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4186,7 +4184,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &837887359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4260,7 +4258,7 @@ RectTransform:
   m_Children:
   - {fileID: 19162646}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4276,7 +4274,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 843663787}
-  - component: {fileID: 843663788}
   m_Layer: 5
   m_Name: UI_Buttons
   m_TagString: Untagged
@@ -4304,18 +4301,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &843663788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 843663786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5b563eeebad63147a8471d6b75e5e87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &848791661
 GameObject:
   m_ObjectHideFlags: 0
@@ -5369,79 +5354,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1053682648}
   m_CullTransparentMesh: 0
---- !u!1 &1077971742
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1077971743}
-  - component: {fileID: 1077971745}
-  - component: {fileID: 1077971744}
-  m_Layer: 5
-  m_Name: Ready Juice 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1077971743
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077971742}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 528064177}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -500}
-  m_SizeDelta: {x: 230.7, y: 230.7}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1077971744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077971742}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.34260082, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fe35307db198c34dbda6c5d6f254fb7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1077971745
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077971742}
-  m_CullTransparentMesh: 0
 --- !u!1 &1089963589
 GameObject:
   m_ObjectHideFlags: 0
@@ -5604,79 +5516,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1132694609
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1132694610}
-  - component: {fileID: 1132694612}
-  - component: {fileID: 1132694611}
-  m_Layer: 5
-  m_Name: ReadyJuice2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1132694610
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132694609}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 528064177}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1, y: -250}
-  m_SizeDelta: {x: 230.7, y: 230.7}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1132694611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132694609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.34260082, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fe35307db198c34dbda6c5d6f254fb7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 1
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1132694612
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1132694609}
-  m_CullTransparentMesh: 0
 --- !u!1 &1149575452
 GameObject:
   m_ObjectHideFlags: 0
@@ -7021,12 +6860,12 @@ MonoBehaviour:
   exitInventoryBtn: {fileID: 955865576}
   marketPlaceBtn: {fileID: 837887358}
   buyEmptyBottleBtn: {fileID: 1892616793}
-  buyIceJuiceBtn: {fileID: 0}
-  buyThunderJuiceBtn: {fileID: 0}
-  buyCloverJuiceBtn: {fileID: 0}
-  buyRadiateJuiceBtn: {fileID: 0}
-  buyKingJuiceBtn: {fileID: 0}
-  buyNicotineBtn: {fileID: 0}
+  buyIceJuiceBtn: {fileID: 263095331}
+  buyThunderJuiceBtn: {fileID: 1288481139}
+  buyCloverJuiceBtn: {fileID: 107561253}
+  buyRadiateJuiceBtn: {fileID: 2043404991}
+  buyKingJuiceBtn: {fileID: 1181583192}
+  buyNicotineBtn: {fileID: 222175155}
   buyVGJuiceBtn: {fileID: 0}
   buyPGJuiceBtn: {fileID: 0}
   boolMouseOver: 0
@@ -7115,7 +6954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1594187490
 GameObject:

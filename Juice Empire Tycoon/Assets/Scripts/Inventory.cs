@@ -20,6 +20,11 @@ public class Inventory
         itemList.Add(item);
     }
 
+    public void PickItem(Items item)
+    {
+        itemList.Remove(item);
+    }
+
     public List<Items> GetItemList()
     {
         return itemList;
