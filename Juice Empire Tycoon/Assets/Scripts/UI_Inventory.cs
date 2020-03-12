@@ -9,6 +9,9 @@ public class UI_Inventory : MonoBehaviour
 {
     private Inventory inventory;
 
+    private StatsSidebar statsSidebar;
+    private Transform statsPanel;
+
     private Transform itemSlotContainer;
     private Transform itemSlotTemplate;
 
@@ -16,6 +19,7 @@ public class UI_Inventory : MonoBehaviour
     {
         itemSlotContainer = transform.Find("itemSlotContainer");
         itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
+        statsPanel = transform.Find("StatsPanel");
     }
 
     public void SetInventory(Inventory inventory)
@@ -50,6 +54,11 @@ public class UI_Inventory : MonoBehaviour
 
     public void PickFromInventory()
     {
-        
+        RectTransform itemSlotRectTransform = GetComponent<RectTransform>();
+        itemSlotRectTransform.gameObject.SetActive(false);
+        Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
+        Destroy(gameObject);
+       // statsPanel.FindChild; // fortsett her
+
     }
 }
