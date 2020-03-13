@@ -54,9 +54,9 @@ public class UI_Inventory : MonoBehaviour
 
     public void PickFromInventory()
     {
-        RectTransform itemSlotRectTransform = GetComponent<RectTransform>();
-        itemSlotRectTransform.gameObject.SetActive(false);
-        Image image = itemSlotRectTransform.Find("image").GetComponent<Image>();
+        //RectTransform itemSlotRectTransform = GetComponent<RectTransform>();
+        //itemSlotRectTransform.gameObject.SetActive(false);
+        //Image i_image = itemSlotRectTransform.Find("image").GetComponent<Image>();
         Destroy(gameObject);
        // statsPanel.FindChild; // fortsett her
 
