@@ -64,7 +64,7 @@ public class Buttons : MonoBehaviour
 
     public void GoToJuiceLab()
     {
-        OnMouseOver()
+        OnMouseOver();
     }
     public void BuyEmptyBottle()
     {
