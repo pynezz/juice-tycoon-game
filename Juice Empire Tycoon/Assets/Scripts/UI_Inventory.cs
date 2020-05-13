@@ -7,24 +7,24 @@ using UnityEngine.UI;
 
 public class UI_Inventory : MonoBehaviour
 {
-    private Inventory inventory;
+    private Inventory _inventory;
 
-    private StatsSidebar statsSidebar;
-    private Transform statsPanel;
+    private StatsSidebar _statsSidebar;
+    private Transform _statsPanel;
 
-    private Transform itemSlotContainer;
-    private Transform itemSlotTemplate;
+    private Transform _itemSlotContainer;
+    private Transform _itemSlotTemplate;
 
     private void Awake()
     {
-        itemSlotContainer = transform.Find("itemSlotContainer");
-        itemSlotTemplate = itemSlotContainer.Find("itemSlotTemplate");
-        statsPanel = transform.Find("StatsPanel");
+        _itemSlotContainer = transform.Find("itemSlotContainer");
+        _itemSlotTemplate = _itemSlotContainer.Find("itemSlotTemplate");
+        _statsPanel = transform.Find("StatsPanel");
     }
 
     public void SetInventory(Inventory inventory)
     {
-        this.inventory = inventory;
+        this._inventory = inventory;
         RefreshInventoryItems();
     }
 
@@ -34,9 +34,9 @@ public class UI_Inventory : MonoBehaviour
         int y = 0;
         float itemSlotCellSize = 250f;
 
-        foreach (Items item in inventory.GetItemList())
+        foreach (Items item in _inventory.GetItemList())
         {
-            RectTransform itemSlotRectTransform = Instantiate(itemSlotTemplate, itemSlotContainer).GetComponent<RectTransform>();
+            RectTransform itemSlotRectTransform = Instantiate(_itemSlotTemplate, _itemSlotContainer).GetComponent<RectTransform>();
             itemSlotRectTransform.gameObject.SetActive(true);
             itemSlotRectTransform.anchoredPosition = new Vector2(x * itemSlotCellSize, y * -itemSlotCellSize);
 
